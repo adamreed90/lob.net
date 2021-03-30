@@ -12,8 +12,6 @@ namespace Lob.Net
         Task<DeleteResponse> DeleteAsync(string id, CancellationToken cancellationToken = default);
         Task<BankAccountResponse> VerifyAsync(string id, int amountInCents1, int amountInCents2, CancellationToken cancellationToken = default);
         Task<ListResponse<BankAccountResponse>> ListAsync(BankAccountFilter filter = default, CancellationToken cancellationToken = default);
-#if NETSTANDARD2_1
         IAsyncEnumerable<BankAccountResponse> ListObjectsAsync(BankAccountFilter filter = default, CancellationToken cancellationToken = default);
-#endif
     }
 }

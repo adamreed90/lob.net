@@ -12,8 +12,6 @@ namespace Lob.Net
         Task<AddressResponse> RetrieveAsync(string id, CancellationToken cancellationToken = default);
         Task<DeleteResponse> DeleteAsync(string id, CancellationToken cancellationToken = default);
         Task<ListResponse<AddressResponse>> ListAsync(AddressFilter filter = default, CancellationToken cancellationToken = default);
-#if NETSTANDARD2_1
         IAsyncEnumerable<AddressResponse> ListObjectsAsync(AddressFilter filter = default, CancellationToken cancellationToken = default);
-#endif
     }
 }

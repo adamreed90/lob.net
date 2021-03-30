@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    <TargetFrameworks>net5.0</TargetFrameworks>
     <AssemblyName>Lob.Net</AssemblyName>
     <RootNamespace>Lob.Net</RootNamespace>
     <LangVersion>8.0</LangVersion>

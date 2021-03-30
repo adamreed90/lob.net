@@ -58,7 +58,6 @@ namespace Lob.Net
             return await ListAsync<TemplateVersionResponse>($"{url}?{queryString}");
         }
 
-#if NETSTANDARD2_1
         public async IAsyncEnumerable<TemplateVersionResponse> ListVersionObjectsAsync(string templateId, TemplateVersionFilter filter = default, [EnumeratorCancellation]CancellationToken cancellationToken = default)
         {
             var url = string.Format(URL_VERSIONS, templateId);
@@ -68,6 +67,5 @@ namespace Lob.Net
                 yield return value;
             }
         }
-#endif
     }
 }

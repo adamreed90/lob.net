@@ -24,7 +24,7 @@ namespace Lob.Net.Sample
                 var result1 = await lobChecks.CreateAsync(new CheckRequest
                 {
                     Amount = 100,
-                    BankAccount = "bank_d435285869e56e0", // Saved bank account in LOB
+                    BankAccount = "bank_052d30fcd2169d9", // Saved bank account in LOB
                     From = new AddressReference(new AddressRequest
                     {
                         Name = "Jean-Sébastien Goupil",
@@ -35,7 +35,7 @@ namespace Lob.Net.Sample
                         AddressZip = "98103",
                         AddressCountry = "US"
                     }),
-                    To = new AddressReference("adr_9162050afe1ffe96"), // Saved address in LOB
+                    To = new AddressReference("adr_3c76dcedb5f88d79"), // Saved address in LOB
                     Description = "Paying Employee"
                 });
 

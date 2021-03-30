@@ -34,9 +34,9 @@ namespace Lob.Net.Sample
                         AddressZip = "98103",
                         AddressCountry = "US"
                     }),
-                    To = new AddressReference("adr_9162050afe1ffe96"), // Saved address in LOB
-                    Front = "tmpl_c65f6b82cddb8ab", // Saved template in LOB
-                    Back = "tmpl_c65f6b82cddb8ab", // Saved template in LOB
+                    To = new AddressReference("adr_3c76dcedb5f88d79"), // Saved address in LOB
+                    Front = "tmpl_17e45d5c43355b1", // Saved template in LOB
+                    Back = "tmpl_17e45d5c43355b1", // Saved template in LOB
                     MergeVariables = new Dictionary<string, string>
                     {
                         {"variable_name", "Jean-Sébastien" }

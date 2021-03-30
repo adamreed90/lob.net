@@ -43,7 +43,6 @@ namespace Lob.Net
             return await ListAsync<ModelResponse>($"{url}?{queryString}", cancellationToken);
         }
 
-#if NETSTANDARD2_1
         public async IAsyncEnumerable<ModelResponse> ListObjectsAsync(ModelFilter filter = default, [EnumeratorCancellation] CancellationToken cancellationToken = default)
         {
             var queryString = await GetListQueryStringAsync(filter);
@@ -73,7 +72,6 @@ namespace Lob.Net
                 currentUrl = listResponse.NextUrl;
             } while (!cancellationToken.IsCancellationRequested);
         }
-#endif
 
         protected Task<ListResponse<T>> ListAsync<T>(string url, CancellationToken cancellationToken = default)
         {
